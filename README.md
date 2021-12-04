@@ -38,13 +38,13 @@ Users should be able to:
 ### Built with
 
 - BEM methodology
-- SCSS
+- Sass/SCSS
 - Flexbox
 - CSS Grid
 
 ### What I learned
 
-I learned the basics of Sass and I especially liked the ability to split the code into modules.
+I learned the basics of Sass/SCSS and I especially liked the ability to split the code into modules.
 
 ```scss
 @use 'variables';
@@ -52,11 +52,11 @@ I learned the basics of Sass and I especially liked the ability to split the cod
 
 ### Continued development
 
-I want to focus on using Sass more frequently.
+I want to focus on using Sass/SCSS more frequently.
 
 ### Useful resources
 
-- [Sass Basics](https://sass-lang.com/guide) - This helped me to learn what Sass is. I really liked Sass because of its modular approach and the ability to do math in CSS.
+- [Sass Basics](https://sass-lang.com/guide) - This helped me to learn what Sass/SCSS is. I really liked Sass because of its modular approach and the ability to do math in CSS.
 
 ## Author
 
