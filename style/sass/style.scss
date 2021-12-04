@@ -1,0 +1,135 @@
+@use 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    font-family: Outfit;
+    font-size: variables.$font-size;
+    background-color: variables.$bg-color;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card {
+    background-color: variables.$card-bg-color;
+    color: variables.$emphasize-color;
+    width: variables.$card-width;
+    border: none;
+    border-radius: variables.$card-border-radius;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.card__preview {
+    display: grid;
+    justify-items: center;
+    background-color: variables.$selection-color;
+    border: none;
+    border-radius: variables.$image-border-radius;
+    overflow: hidden;
+}
+
+.card__preview__image {
+    width: 100%;
+    height: auto;
+    grid-area: 1/1/1/1;
+}
+
+.card__preview__view {
+    height: inherit;
+    z-index: 2;
+    grid-area: 1/1/1/1;
+    align-self: center;
+    opacity: 0%;
+}
+
+.card__title {
+    font-size: variables.$title-font-size;
+    margin-top: 1.5rem;
+}
+
+.card__description, .card__info, .card__author-info {
+    color: variables.$text-color;
+    font-weight: 300;
+}
+
+.card__description {
+    padding: 0.5rem 0 0.5rem 0;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card__info > * {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.card__info > * > img {
+    margin-right: 0.5rem;
+}
+
+.card__info__price {
+    font-weight: 700;
+    color: variables.$selection-color;
+}
+
+hr {
+    opacity: 10%;
+}
+
+.card__author-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.card__author-info__avatar {
+    width: 2rem;
+    margin-right: 1rem;
+    border-style: solid;
+    border-color: variables.$emphasize-color;
+    border-width: 1px;
+    border-radius: 50%;
+}
+
+.card__author-info__author__link {
+    color: variables.$emphasize-color;
+    text-decoration: none;
+}
+
+.card__preview:hover {
+    cursor: pointer;
+}
+
+.card__preview:hover .card__preview__image {
+    opacity: 50%;
+}
+
+.card__preview:hover .card__preview__view {
+    opacity: 100%;
+}
+
+.card__author-info__author__link:hover, .card__title:hover {
+    color: variables.$selection-color;
+    cursor: pointer;
+}
+
+.attribution {
+    color: variables.$emphasize-color;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: variables.$attribution-link-color;
+}

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  font-family: Outfit;
+  font-size: 18px;
+  background-color: #0d192b;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.card {
+  background-color: #14253d;
+  color: white;
+  width: 18rem;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.card__preview {
+  display: grid;
+  justify-items: center;
+  background-color: #00fff7;
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card__preview__image {
+  width: 100%;
+  height: auto;
+  grid-area: 1/1/1/1;
+}
+
+.card__preview__view {
+  height: inherit;
+  z-index: 2;
+  grid-area: 1/1/1/1;
+  align-self: center;
+  opacity: 0%;
+}
+
+.card__title {
+  font-size: 20px;
+  margin-top: 1.5rem;
+}
+
+.card__description, .card__info, .card__author-info {
+  color: #bfbfbf;
+  font-weight: 300;
+}
+
+.card__description {
+  padding: 0.5rem 0 0.5rem 0;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card__info > * {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.card__info > * > img {
+  margin-right: 0.5rem;
+}
+
+.card__info__price {
+  font-weight: 700;
+  color: #00fff7;
+}
+
+hr {
+  opacity: 10%;
+}
+
+.card__author-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card__author-info__avatar {
+  width: 2rem;
+  margin-right: 1rem;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 50%;
+}
+
+.card__author-info__author__link {
+  color: white;
+  text-decoration: none;
+}
+
+.card__preview:hover {
+  cursor: pointer;
+}
+
+.card__preview:hover .card__preview__image {
+  opacity: 50%;
+}
+
+.card__preview:hover .card__preview__view {
+  opacity: 100%;
+}
+
+.card__author-info__author__link:hover, .card__title:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
